@@ -92,6 +92,40 @@ h2 {
     margin: 0;
 }
 
+#header #nav-menu {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    transform: translateX(-100%);
+    background-color: #fff;
+    z-index: 3;
+    transition: transform 0.5s;
+}
+
+#header #nav-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#header #nav-menu ul li {
+    list-style-type: none;   
+    padding: 10px 30px 15px;
+    border-bottom: 1px solid #000;
+}
+
+#header #nav-menu ul li:last-child {
+    border: none;
+}
+
+#header #nav-menu ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#header #nav-menu.open {
+    transform: initial;
+}
+
 /*! search */
 #search {
     padding: 20px 0;
