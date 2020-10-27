@@ -30,6 +30,15 @@ h2 {
     font-size: 1.25rem;
 }
 
+.product-btn {
+    background-color: #6200ffab;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
 @media (min-width: 720px) {
     * {
         font-size: 16px;
@@ -81,6 +90,40 @@ h2 {
     font-size: 2rem;
     color: #fff;
     margin: 0;
+}
+
+#header #nav-menu {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    transform: translateX(-100%);
+    background-color: #fff;
+    z-index: 3;
+    transition: transform 0.5s;
+}
+
+#header #nav-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#header #nav-menu ul li {
+    list-style-type: none;   
+    padding: 10px 30px 15px;
+    border-bottom: 1px solid #000;
+}
+
+#header #nav-menu ul li:last-child {
+    border: none;
+}
+
+#header #nav-menu ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#header #nav-menu.open {
+    transform: initial;
 }
 
 /*! search */
@@ -174,15 +217,6 @@ h2 {
     max-height: 200px;
 }
 
-.product .product-btn {
-    background-color: #6200ffab;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    padding: 10px;
-    font-size: 1.2rem;
-}
-
 @media (min-width: 720px) {
     .product-grid {
         display: flex;
@@ -199,4 +233,62 @@ h2 {
     .product:nth-child(2n) {
         margin-right: 0;
     }
+}
+
+/* Página de Categoria */
+.category-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px 0;
+}
+
+/* Página de Produto */
+.product-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px 0;
+}
+
+.product-page .product-hero {
+    text-align: center;
+}
+
+.product-page .product-img {
+    max-height: 500px;
+    margin-bottom: 50px;
+}
+
+.product-page .product-price {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.product-page .product-btn {
+    padding: 5px 20px 10px;
+    margin-bottom: 30px;
+}
+
+.product-page .product-btn svg {
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}
+
+.product-page .product-information {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+@media (min-width: 1024px) {
+    .product-page .product-hero {
+        display: flex;
+        align-items: center;
+    }
+
+    .product-page .product-hero .wrap {
+        text-align: left;
+        margin-left: 50px;
+    }
+
 }
