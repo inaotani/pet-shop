@@ -37,6 +37,7 @@ h2 {
     color: #fff;
     padding: 10px;
     font-size: 1.2rem;
+    box-shadow: 0px 3px 15px rgba(0,0,0,.1);
 }
 
 @media (min-width: 720px) {
@@ -86,7 +87,7 @@ h2 {
     width: 30px;
 }
 
-#header h1 {
+#header .site-title {
     font-size: 2rem;
     color: #fff;
     margin: 0;
@@ -211,6 +212,7 @@ h2 {
     margin: 0 auto 20px;
     max-width: 350px;
     box-sizing: border-box;
+    box-shadow: 0px 3px 15px rgba(0,0,0,.16);
 }
 
 .product .product-img {
@@ -291,4 +293,24 @@ h2 {
         margin-left: 50px;
     }
 
+}
+
+/* Login Form */
+#login-page #login-form {
+    padding: 50px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form input {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#login-page h1 {
+    text-align: center;
+    margin-top: 50px;
 }
