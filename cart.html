@@ -8,7 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body class="product-page">
+<body id="login-page">
     <header id="header">
         <div class="container">      
             <nav id="nav-menu">
@@ -25,19 +25,24 @@
 
             <h2 class="site-title">Pet Shop</h2>
 
-            <a href="login.html"><img class="icon" src="images/cart.svg"></a>
+            <a href="login.html"><img class="icon" src="images/user.svg" alt="Ícone do user"></a>
         </div>
     </header>
-
-    <main class="container">
-        <h1>Royal Canin - Adulto - 15kg</h1>
-        <div class="product-hero">
-            <img class="product-img" src="images/produto1.png">
-            <div class="wrap">
-                <p class="product-price">R$ 235,99</p>
-                <a href="cart.html" class="product-btn"><img src="images/cart.svg">Adicionar ao carrinho</a>
-                <p class="product-information">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod egestas sollicitudin. Nulla ut lectus nec arcu cursus fermentum ac ut ligula.</p>
+    <main class="container" id="cart-page">
+        <h1>Carrinho</h1>
+        <div class="product-grid">
+            <div class="product product-inline">
+                <img class="product-img" src="images/produto1.png">
+                <div class="product-info">
+                    <h3 class="product-name">Royal Canin - Adulto - 15kg</h3>
+                    <p class="product-price">R$ 235,99</p>
+                    <input class="product-qtde" type="number" name="product-qtde" value="1">
+                </div>
             </div>
+        </div>
+        <div class="cart-info">
+            <p>Valor Total: <span>R$ 235,99</span></p>
+            <a href="login.html" class="product-btn">Fechar Pedido</a>
         </div>
     </main>
     <footer id="footer">

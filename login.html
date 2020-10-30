@@ -6,32 +6,38 @@
     <title>Pet Shop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body id="login-page">
     <header id="header">
         <div class="container">      
-            <!--<nav>
+            <nav id="nav-menu">
                 <ul>
-                    <li>Rações</li>
-                    <li>Brinquedos</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categoria.html">Rações</a></li>
+                    <li><a href="categoria.html">Brinquedos</a></li>
+                    <li><a href="categoria.html">Higiene</a></li>
                 </ul>
-            </nav> -->
+            </nav> 
 
-            <img class="icon" src="images/menu-icon.svg" alt="Menu hamburguer">
+            <img class="icon" src="images/menu-icon.svg" alt="Menu hamburguer" onclick="changeClass()">
 
             <h2 class="site-title">Pet Shop</h2>
 
-            <img class="icon" src="images/user.svg" alt="Ícone do user">
+            <a href="cart.html"><img class="icon" src="images/cart.svg"></a>
         </div>
     </header>
     <main>
         <h1>Login</h1>
-        <form id="login-form" class="form">
+        <form id="login-form" class="form" action="checkout.html">
             <input type="text" placeholder="login" id="login" name="login">
             <input type="password" placeholder="senha" id="password" name="password">
             <input class="product-btn" type="submit" value="Entrar">
-            <input class="product-btn" type="button" value="Cadastrar-se">
+            <a href="singup.html" class="product-btn">Cadastrar-se</a>
         </form>
     </main>
+    <footer id="footer">
+        <p>Pet Shop - 2020</p>
+    </footer>
 </body>
 </html>

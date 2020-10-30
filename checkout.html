@@ -8,7 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body class="product-page">
+<body id="login-page">
     <header id="header">
         <div class="container">      
             <nav id="nav-menu">
@@ -25,20 +25,37 @@
 
             <h2 class="site-title">Pet Shop</h2>
 
-            <a href="login.html"><img class="icon" src="images/cart.svg"></a>
+            <a href="login.html"><img class="icon" src="images/user.svg" alt="Ícone do user"></a>
         </div>
     </header>
-
-    <main class="container">
-        <h1>Royal Canin - Adulto - 15kg</h1>
-        <div class="product-hero">
-            <img class="product-img" src="images/produto1.png">
-            <div class="wrap">
-                <p class="product-price">R$ 235,99</p>
-                <a href="cart.html" class="product-btn"><img src="images/cart.svg">Adicionar ao carrinho</a>
-                <p class="product-information">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod egestas sollicitudin. Nulla ut lectus nec arcu cursus fermentum ac ut ligula.</p>
-            </div>
+    <main class="container" id="checkout-page">
+        <h1>Checkout</h1>
+        <div class="person-info">
+            <h2>Informações de Pessoais</h2>
+            <p>
+                Joe Doe<br>
+                Av. São Carlos, 2020 - Centro<br>
+                01/01/200<br>
+            </p>
         </div>
+
+        <div class="order-info">
+            <h2>Informações do Pedido</h2>
+            <p>
+                Royal Canin - Adulto - 15kg<br>
+                1x R$ 235,99<br>
+            </p>
+        </div>
+
+        <div class="payment-info">
+            <h2>Informações do Pagamento</h2>
+            <p>
+                Cartão Nubank<br>
+                Num. xxxx.xxxx.xxxx.2020<br>
+                1x de 235,99
+            </p>
+        </div>
+        <a href="index.html" class="product-btn">Finalizar</a>
     </main>
     <footer id="footer">
         <p>Pet Shop - 2020</p>

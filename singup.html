@@ -8,7 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body class="product-page">
+<body id="singup-page">
     <header id="header">
         <div class="container">      
             <nav id="nav-menu">
@@ -17,7 +17,6 @@
                     <li><a href="categoria.html">Rações</a></li>
                     <li><a href="categoria.html">Brinquedos</a></li>
                     <li><a href="categoria.html">Higiene</a></li>
-                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav> 
 
@@ -25,20 +24,21 @@
 
             <h2 class="site-title">Pet Shop</h2>
 
-            <a href="login.html"><img class="icon" src="images/cart.svg"></a>
+            <a href="cart.html"><img class="icon" src="images/cart.svg"></a>
         </div>
     </header>
-
     <main class="container">
-        <h1>Royal Canin - Adulto - 15kg</h1>
-        <div class="product-hero">
-            <img class="product-img" src="images/produto1.png">
-            <div class="wrap">
-                <p class="product-price">R$ 235,99</p>
-                <a href="cart.html" class="product-btn"><img src="images/cart.svg">Adicionar ao carrinho</a>
-                <p class="product-information">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod egestas sollicitudin. Nulla ut lectus nec arcu cursus fermentum ac ut ligula.</p>
-            </div>
-        </div>
+        <h1>Cadastrar</h1>
+        <form id="singup-form" class="form" action="login.html">
+            <input type="text" placeholder="nome" id="name" name="name">
+            <input type="email" placeholder="e-mail" id="email" name="email">
+            <p>Data de Nascimento:</p>
+            <input type="date" placeholder="nascimento" id="birth" name="birth">
+            <input type="text" placeholder="endereço" id="address" name="address">
+            <input type="text" placeholder="login" id="login" name="login">
+            <input type="password" placeholder="senha" id="password" name="password">
+            <input class="product-btn" type="submit" value="Cadastrar">
+        </form>
     </main>
     <footer id="footer">
         <p>Pet Shop - 2020</p>
