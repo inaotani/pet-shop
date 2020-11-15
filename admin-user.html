@@ -8,7 +8,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body id="checkout-page">
+<body id="user-page">
     <header id="header">
         <div class="container">      
             <nav id="nav-menu">
@@ -17,7 +17,7 @@
                     <li><a href="categoria.html">Rações</a></li>
                     <li><a href="categoria.html">Brinquedos</a></li>
                     <li><a href="categoria.html">Higiene</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login.html">Logout</a></li>
                 </ul>
             </nav> 
 
@@ -25,37 +25,47 @@
 
             <h2 class="site-title">Pet Shop</h2>
 
-            <a href="login.html"><img class="icon" src="images/user.svg" alt="Ícone do user"></a>
+            <a href="cart.html"><img class="icon" src="images/cart.svg"></a>
         </div>
     </header>
-    <main class="container" id="checkout-page">
-        <h1>Checkout</h1>
+
+    <main class="container">
+        <h1>Minha Conta</h1>
         <div class="person-info">
             <h2>Informações de Pessoais</h2>
             <p>
                 Joe Doe<br>
+                joe.doe@gmail.com<br>
                 Av. São Carlos, 2020 - Centro<br>
                 01/01/200<br>
             </p>
+            <div>
+                <a href="#">Editar</a>
+            </div>
         </div>
-
         <div class="order-info">
-            <h2>Informações do Pedido</h2>
-            <p>
-                Royal Canin - Adulto - 15kg<br>
-                1x R$ 235,99<br>
-            </p>
+            <h2>Histórico de Pedidos</h2>
+            <div>
+                <p>
+                    <strong>Pedido: 131289</strong><br>
+                    12/10/2020 <br>
+                    1x Royal Canin - Adulto - 15kg<br>
+                    Cartão Nubank<br>
+                    Num. xxxx.xxxx.xxxx.2020<br>
+                    1x de 235,99
+                </p>
+            </div>
+            <div>
+                <p>
+                    <strong>Pedido: 017638</strong><br>
+                    15/02/2020 <br>
+                    1x Royal Canin - Adulto - 15kg<br>
+                    Cartão Nubank<br>
+                    Num. xxxx.xxxx.xxxx.2020<br>
+                    1x de 235,99
+                </p>
+            </div>
         </div>
-
-        <div class="payment-info">
-            <h2>Informações do Pagamento</h2>
-            <p>
-                Cartão Nubank<br>
-                Num. xxxx.xxxx.xxxx.2020<br>
-                1x de 235,99
-            </p>
-        </div>
-        <a href="admin-user.html" class="product-btn">Finalizar</a>
     </main>
     <footer id="footer">
         <p>Copyright © 2020 Pet Shop - <img alt="facebook" src="images/facebook.png"> <img alt="instagram" src="images/instagram.png"</p>
